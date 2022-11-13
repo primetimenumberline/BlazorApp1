@@ -94,7 +94,7 @@
 
         if (!validateInputs(input_number, input_base))
         {
-            return "Invalid input: symbol(s) in input number, not found in input base";
+            return "Invalid input: symbol(s) in NUMBER TO CONVERT, not found in input base";
         }
 
         string result = "";
@@ -194,7 +194,7 @@
                 string[] x = { input_number[0] };
                 if (input_number.Length > 1)
                 {
-                    x[0] = output_base[location(input_number[i], input_base)];
+                    x[0] = output_base[location(input_number[i], output_base)];
                 }
                 ans = mul(ans, b, table_multiplication, table_addition, output_base);
                 ans = add(ans, x, table_addition, output_base);
