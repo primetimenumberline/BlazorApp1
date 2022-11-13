@@ -1,5 +1,12 @@
 ﻿@page "/BaseSwap"
 
+<style>
+    textarea {
+            width: 100%;
+            height: 50vh;
+        }
+</style>
+
 <h3><b>BaseSwap, The Big Number Base Converter</b></h3>
 
 
@@ -15,7 +22,7 @@
 <br />
 <br />
 <h5>Final Result:</h5>
-<div class="disp">@output_number_str</div>
+<textarea readonly>@output_number_str</textarea>
 
 
 
